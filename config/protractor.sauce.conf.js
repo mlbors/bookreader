@@ -6,6 +6,7 @@ exports.config = {
   sauceUser: process.env.SAUCE_USERNAME,
   sauceKey: process.env.SAUCE_ACCESS_KEY,
   allScriptsTimeout: 51000,
+  getPageTimeout: 51000,
   specs: [
     '../dist/out-tsc-e2e/**/*.e2e-spec.js',
     '../dist/out-tsc-e2e/**/*.po.js'
@@ -46,7 +47,7 @@ exports.config = {
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
-    defaultTimeoutInterval: 50000,
+    defaultTimeoutInterval: 360000,
     print: function() {}
   },
   useAllAngular2AppRoots: true,
