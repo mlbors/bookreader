@@ -5,8 +5,8 @@ var buildNumber = 'travis-build#'+process.env.TRAVIS_BUILD_NUMBER;
 exports.config = {
   sauceUser: process.env.SAUCE_USERNAME,
   sauceKey: process.env.SAUCE_ACCESS_KEY,
-  allScriptsTimeout: 51000,
-  getPageTimeout: 51000,
+  allScriptsTimeout: 72000,
+  getPageTimeout: 72000,
   specs: [
     '../dist/out-tsc-e2e/**/*.e2e-spec.js',
     '../dist/out-tsc-e2e/**/*.po.js'
