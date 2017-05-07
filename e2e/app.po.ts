@@ -2,7 +2,7 @@ import { browser, element, by } from 'protractor';
 
 export class BookreaderPage {
   navigateTo() {
-    return browser.get('/bookreader');
+    return browser.get('https://mlbors.github.io/bookreader/');
   }
 
   getParagraphText() {
