@@ -1,4 +1,4 @@
-var SpecReporter = require('jasmine-spec-reporter');
+var SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 
 var buildNumber = 'travis-build#'+process.env.TRAVIS_BUILD_NUMBER;
 
