@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/mlbors/bookreader.svg?branch=master)](https://travis-ci.org/mlbors/bookreader)
-
-[![Coverage Status](https://coveralls.io/repos/github/mlbors/bookreader/badge.svg?branch=master)](https://coveralls.io/github/mlbors/bookreader?branch=master)
+[![Build Status](https://travis-ci.org/mlbors/bookreader.svg?branch=master)](https://travis-ci.org/mlbors/bookreader)[![Coverage Status](https://coveralls.io/repos/github/mlbors/bookreader/badge.svg?branch=master)](https://coveralls.io/github/mlbors/bookreader?branch=master)
 
 # Bookreader
 
