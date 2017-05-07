@@ -26,10 +26,24 @@ exports.config = {
       shardTestFiles: true,
       maxInstances: 5
     },
+      {
+      browserName: 'chrome',
+      platform: 'macOS 10.12',
+      name: "chrome-macos-tests",
+      shardTestFiles: true,
+      maxInstances: 5
+    },
     {
       browserName: 'firefox',
       platform: 'Linux',
       name: "firefox-linux-tests",
+      shardTestFiles: true,
+      maxInstances: 5
+    },
+    {
+      browserName: 'firefox',
+      platform: 'macOS 10.12',
+      name: "firefox-macos-tests",
       shardTestFiles: true,
       maxInstances: 5
     },
@@ -40,6 +54,13 @@ exports.config = {
       shardTestFiles: true,
       maxInstances: 5
     },
+    {
+      browserName: 'MicrosoftEdge',
+      platform: 'Windows 10',
+      name: "edge-latest-windows-tests",
+      shardTestFiles: true,
+      maxInstances: 5
+    }
   ],
   sauceBuild: buildNumber,
   directConnect: false,
