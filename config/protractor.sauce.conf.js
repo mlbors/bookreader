@@ -5,7 +5,7 @@ var buildNumber = 'travis-build#'+process.env.TRAVIS_BUILD_NUMBER;
 exports.config = {
   sauceUser: process.env.SAUCE_USERNAME,
   sauceKey: process.env.SAUCE_ACCESS_KEY,
-  allScriptsTimeout: 21000,
+  allScriptsTimeout: 51000,
   specs: [
     '../dist/out-tsc-e2e/**/*.e2e-spec.js',
     '../dist/out-tsc-e2e/**/*.po.js'
@@ -46,7 +46,7 @@ exports.config = {
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
-    defaultTimeoutInterval: 30000,
+    defaultTimeoutInterval: 50000,
     print: function() {}
   },
   useAllAngular2AppRoots: true,
