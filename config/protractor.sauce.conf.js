@@ -7,7 +7,8 @@ exports.config = {
   sauceKey: process.env.SAUCE_ACCESS_KEY,
   allScriptsTimeout: 11000,
   specs: [
-    '../tmp/e2e/**/*.e2e.js'
+    '../dist/out-tsc-e2e/**/*.e2e-spec.js',
+    '../dist/out-tsc-e2e/**/*.po.js'
   ],
   multiCapabilities: [
     {
