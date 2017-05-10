@@ -5,10 +5,6 @@ dist: trusty
 node_js:
   - '6'
 
-branches:
-    only:
-        - master
-
 env:
     global:
         - CHROME_BIN=/usr/bin/google-chrome
