@@ -78,7 +78,7 @@ exports.config = {
   ],
   sauceBuild: buildNumber,
   directConnect: false,
-  baseUrl: 'https://github.com/mlbors/bookreader',
+  baseUrl: 'https://github.com/mlbors/bookreader/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
