@@ -40,14 +40,13 @@ describe('bookreader App', () => {
   /*************************************/
   /********** BANNER ELEMENTS **********/
   /*************************************/
-  
-  /*
 
   it('should display banner elements', () => {
     page.navigateTo();
+    expect(page.isBannerTitleElementPresent()).toBe(true);
+    expect(page.isBannerDescriptionElementPresent()).toBe(true);
+    expect(page.isBannerLinkElementPresent()).toBe(true);
   });
-
-  */
 
   /********************************************************************************/
   /********************************************************************************/
@@ -56,9 +55,9 @@ describe('bookreader App', () => {
   /********** DISPLAY BANNER TITLE **********/
   /******************************************/
 
-  it('should display message saying banner title', () => {
+  it('should display banner title', () => {
     page.navigateTo();
-    expect(page.getBannerTitle()).toEqual('Banner title');
+    expect(page.getBannerTitle()).toEqual('BANNER TITLE');
   });
 
   /********************************************************************************/
@@ -68,7 +67,7 @@ describe('bookreader App', () => {
   /********** DISPLAY BANNER TEXT **********/
   /*****************************************/
 
-  it('should display message saying banner text', () => {
+  it('should display banner text', () => {
     page.navigateTo();
     expect(page.getBannerText()).toEqual('Lorem ipsum dolor sit amet.');
   });
@@ -80,9 +79,9 @@ describe('bookreader App', () => {
   /********** DISPLAY BANNER LINK TEXT **********/
   /**********************************************/
 
-  it('should display message saying banner link text', () => {
+  it('should display banner link text', () => {
     page.navigateTo();
-    expect(page.getBannerLinkText()).toEqual('Read more');
+    expect(page.getBannerLinkText()).toEqual('READ MORE');
   });
 
 });
