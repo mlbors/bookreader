@@ -113,14 +113,85 @@ describe('BannerComponent (templateUrl)', () => {
   /********************************************************************************/
   /********************************************************************************/
 
-  /*******************************/
-  /********** DISPLAY P **********/
-  /*******************************/
+  /************************************/
+  /********** NO DESCRITPION **********/
+  /************************************/
 
-  it('should display information in p', () => {
-    de = fixture.debugElement.query(By.css('p'));
+  it('no description in the DOM until manually call `detectChanges`', () => {
+    de = fixture.debugElement.query(By.css('.description'));
     el = de.nativeElement;
-    expect(el.textContent).toContain('banner works!');
+    expect(el.textContent).toEqual('');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /******************************************/
+  /********** ORIGINAL DESCRIPTION **********/
+  /******************************************/
+
+  it('should display descritpion', () => {
+    de = fixture.debugElement.query(By.css('.description'));
+    el = de.nativeElement;
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Lorem ipsum dolor sit amet.');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*******************************************/
+  /********** DIFFERENT DESCRIPTION **********/
+  /*******************************************/
+
+  it('should display a different description', () => {
+    de = fixture.debugElement.query(By.css('.description'));
+    el = de.nativeElement;
+    component.bannerDescription = 'Test description.';
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Test description.');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*****************************/
+  /********** NO LINK **********/
+  /*****************************/
+
+  it('no link in the DOM until manually call `detectChanges`', () => {
+    de = fixture.debugElement.query(By.css('.btn'));
+    el = de.nativeElement;
+    expect(el.textContent).toEqual('');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /********************************/
+  /********** LINK TITLE **********/
+  /********************************/
+
+  it('should display link', () => {
+    de = fixture.debugElement.query(By.css('.btn'));
+    el = de.nativeElement;
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Read more');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /******************************************/
+  /********** DIFFERENT LINK TITLE **********/
+  /******************************************/
+
+  it('should display a different link title', () => {
+    de = fixture.debugElement.query(By.css('.btn'));
+    el = de.nativeElement;
+    component.buttonTitle = 'Test link';
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Test link');
   });
 
 });

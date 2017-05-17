@@ -37,14 +37,17 @@ describe('bookreader App', () => {
   /********************************************************************************/
   /********************************************************************************/
 
-  /***************************************/
-  /********** DISPLAY APP TITLE **********/
-  /***************************************/
+  /*************************************/
+  /********** BANNER ELEMENTS **********/
+  /*************************************/
+  
+  /*
 
-  it('should display message saying app works', () => {
+  it('should display banner elements', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('APP WORKS!');
   });
+
+  */
 
   /********************************************************************************/
   /********************************************************************************/
@@ -55,7 +58,7 @@ describe('bookreader App', () => {
 
   it('should display message saying banner title', () => {
     page.navigateTo();
-    expect(page.getBannerTitle()).toEqual('BANNER TITLE');
+    expect(page.getBannerTitle()).toEqual('Banner title');
   });
 
   /********************************************************************************/
@@ -65,9 +68,21 @@ describe('bookreader App', () => {
   /********** DISPLAY BANNER TEXT **********/
   /*****************************************/
 
-  it('should display message saying banner works', () => {
+  it('should display message saying banner text', () => {
     page.navigateTo();
-    expect(page.getBannerText()).toEqual('banner works!');
+    expect(page.getBannerText()).toEqual('Lorem ipsum dolor sit amet.');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /**********************************************/
+  /********** DISPLAY BANNER LINK TEXT **********/
+  /**********************************************/
+
+  it('should display message saying banner link text', () => {
+    page.navigateTo();
+    expect(page.getBannerLinkText()).toEqual('Read more');
   });
 
 });

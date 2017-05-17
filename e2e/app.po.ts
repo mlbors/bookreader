@@ -35,13 +35,23 @@ export class BookreaderPage {
   /********************************************************************************/
   /********************************************************************************/
 
-  /***********************************/
-  /********** GET APP TITLE **********/
-  /***********************************/
+  /*****************************************/
+  /********** GET BANNER ELEMENTS **********/
+  /*****************************************/
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  /*
+
+  getBannerElements() {
+
+    expect(element(by.css('app-root app-banner h1')).isPresent()).toBe(true);
+    expect(element(by.css('app-root app-banner p.description')).isPresent()).toBe(true);
+    expect(element(by.css('app-root app-banner a.btn')).isPresent()).toBe(true);
   }
+
+  */
+
+  /********************************************************************************/
+  /********************************************************************************/
 
   /**************************************/
   /********** GET BANNER TITLE **********/
@@ -59,7 +69,18 @@ export class BookreaderPage {
   /*************************************/
 
   getBannerText() {
-    return element(by.css('app-root app-banner p')).getText();
+    return element(by.css('app-root app-banner p.description')).getText();
+  }
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /******************************************/
+  /********** GET BANNER LINK TEXT **********/
+  /******************************************/
+
+  getBannerLinkText() {
+    return element(by.css('app-root app-banner a.btn')).getText();
   }
 
 }
