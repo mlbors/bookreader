@@ -74,6 +74,15 @@ exports.config = {
       name: "edge-latest-windows-tests",
       shardTestFiles: true,
       maxInstances: 5
+    },
+    {
+      browserName: 'safari',
+      name: 'safari-ios-tests',
+      platformName: 'iOS',
+      platformVersion: '10.2',
+      deviceName: 'iPhone 7',
+      shardTestFiles: true,
+      maxInstances: 5
     }
   ],
   sauceBuild: buildNumber,
