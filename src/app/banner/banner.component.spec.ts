@@ -214,12 +214,12 @@ describe('BannerComponent (templateUrl)', () => {
   /*************************************/
 
   it('should display background image in the DOM if there is url for', () => {
-    component.backgroundImageUrl = '/assets/img/img/img-001-min.jpg';
+    component.backgroundImageUrl = 'assets/img/img/img-001-min.jpg';
     fixture.detectChanges();
     de = fixture.debugElement.query(By.css('.bg-image'));
     el = de.nativeElement;
     expect(de).toBeDefined();
-    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
   });
 
   /********************************************************************************/
@@ -230,16 +230,16 @@ describe('BannerComponent (templateUrl)', () => {
   /*********************************************/
 
   it('should display a diffrent background image in the DOM if there is url for and it is changed', () => {
-    component.backgroundImageUrl = '/assets/img/img/img-001-min.jpg';
+    component.backgroundImageUrl = 'assets/img/img/img-001-min.jpg';
     fixture.detectChanges();
     de = fixture.debugElement.query(By.css('.bg-image'));
     el = de.nativeElement;
     expect(de).toBeDefined();
-    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
-    component.backgroundImageUrl = '/assets/img/img/img-002-min.jpg';
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
+    component.backgroundImageUrl = 'assets/img/img/img-002-min.jpg';
     fixture.detectChanges();
     expect(de).toBeDefined();
-    expect(el.getAttribute('src')).toBe('/assets/img/img/img-002-min.jpg');
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-002-min.jpg');
   });
 
   /********************************************************************************/
@@ -262,12 +262,12 @@ describe('BannerComponent (templateUrl)', () => {
   /********************************/
 
   it('should display main image in the DOM if there is url for', () => {
-    component.mainImageUrl = '/assets/img/img/img-001-min.jpg';
+    component.mainImageUrl = 'assets/img/img/img-001-min.jpg';
     fixture.detectChanges();
     de = fixture.debugElement.query(By.css('.main-image'));
     el = de.nativeElement;
     expect(de).toBeDefined();
-    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
   });
 
   /********************************************************************************/
@@ -278,16 +278,16 @@ describe('BannerComponent (templateUrl)', () => {
   /***************************************/
 
   it('should display a diffrent main image in the DOM if there is url for and it is changed', () => {
-    component.mainImageUrl = '/assets/img/img/img-001-min.jpg';
+    component.mainImageUrl = 'assets/img/img/img-001-min.jpg';
     fixture.detectChanges();
     de = fixture.debugElement.query(By.css('.main-image'));
     el = de.nativeElement;
     expect(de).toBeDefined();
-    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
-    component.mainImageUrl = '/assets/img/img/img-002-min.jpg';
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
+    component.mainImageUrl = 'assets/img/img/img-002-min.jpg';
     fixture.detectChanges();
     expect(de).toBeDefined();
-    expect(el.getAttribute('src')).toBe('/assets/img/img/img-002-min.jpg');
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-002-min.jpg');
   });
 
 });
