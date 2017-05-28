@@ -1,7 +1,7 @@
 /**
- * mlbors - SCSS - Fonts
+ * Book Reader - SCSS - Fonts
  *
- * since		04.01.2017
+ * since		03.05.2017
  * version		1.0.0.0
  * author		mlbors
  * copyright	-
@@ -21,193 +21,113 @@
 
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 300;
-  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v9/X_EdMnknKUltk57alVVbV4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZvZraR2Tg8w2lzm7kLNL0-w.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 300;
-  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v9/nBF2d6Y3AbOwfkBM-9HcWIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zl4sYYdJg5dU2qzJEVSuta0.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 300;
-  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v9/CdlIlwqST01WNAKqZbtZkoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZlBW26QxpSj-_ZKm_xT4hWw.woff2) format('woff2');
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 300;
-  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v9/7k0RmqCN8EFxqS6sChuRzYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zgt_Rm691LTebKfY2ZkKSmI.woff2) format('woff2');
   unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZtDiNsR5a-9Oe_Ivpu8XWlY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 300;
-  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v9/WtcvfJHWXKxx4x0kuS1koYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37ZqE8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 300;
-  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(https://fonts.gstatic.com/s/ubuntu/v9/_aijTyevf54tkVDLy-dlnJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zogp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/BxfrwvhZBmVnDwajjdTQeH-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJQXaAXup5mZlfK6xRLrhsco.woff2) format('woff2');
   unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/rOHfGaogav5XpJHYhB_YZ3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJVx-M1I1w5OMiqnVF8xBLhU.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/zwDIfh8KEInP4WYoM7h0b3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJVT7aJLK6nKpn36IMwTcMMc.woff2) format('woff2');
   unicode-range: U+1F00-1FFF;
 }
 /* greek */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/BgwOR-U84B6EluzUITbpkH-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJQn6Wqxo-xwxilDXPU8chVU.woff2) format('woff2');
   unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJcbIQSYZnWLaWC9QNCpTK_U.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/Zcmru5bcP_p_TwCNg-F3DH-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJYgd9OEPUCN3AdYW0e8tat4.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v9/zvCUQcxqeoKhyOlbifSAaevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v9/MLKvhAbswThSVACnSTWCp4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v9/IiMFELcoPB-OzGzq14k4eoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v9/H2j4_4xA-HIuoc_A3BIwVIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v9/EtSRPnpS3nIR-zKYiR-sDIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v9/gMhvhm-nVj1086DvGgmzB4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v9/OsJ2DjdpjqFRVUSto6IffJBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v9/oxrPYIm05JrY_0rFIEQ_oYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v9/4z2U46_RRLOfkoHsWJG3v4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v9/2vaWVxeAxHVkFcnCBCQCyYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v9/M-Ii49WH_TYYnOjQyLgTMIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v9/nsLtvfQoT-rVwGTHHnkeJoX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v9/0ihfXUL2emPh0ROJezvraJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJf79_ZuUxCigM2DespTnFaw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }

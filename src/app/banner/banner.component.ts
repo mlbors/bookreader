@@ -11,7 +11,7 @@
 /********** IMPORTS **********/
 /*****************************/
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 /**************************/
 /********** META **********/
@@ -39,6 +39,9 @@ export class BannerComponent implements OnInit {
   title: String = 'Banner title';
   bannerDescription: String = 'Lorem ipsum dolor sit amet.';
   buttonTitle: String = 'Read more';
+
+  @Input() backgroundImageUrl: String = null;
+  @Input() mainImageUrl: String = null;
 
   /********************************************************************************/
   /********************************************************************************/

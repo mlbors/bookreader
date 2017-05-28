@@ -46,6 +46,8 @@ describe('bookreader App', () => {
     expect(page.isBannerTitleElementPresent()).toBe(true);
     expect(page.isBannerDescriptionElementPresent()).toBe(true);
     expect(page.isBannerLinkElementPresent()).toBe(true);
+    expect(page.isBackgroundImageElementPresent()).toBe(true);
+    expect(page.isMainImageElementPresent()).toBe(true);
   });
 
   /********************************************************************************/
@@ -82,6 +84,45 @@ describe('bookreader App', () => {
   it('should display banner link text', () => {
     page.navigateTo();
     expect(page.getBannerLinkText()).toEqual('READ MORE');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /**********************************************/
+  /********** SRC FOR BACKGROUND IMAGE **********/
+  /**********************************************/
+
+  it('should have a src of background image', () => {
+    page.navigateTo();
+    expect(page.getBackgroundImageElement().getAttribute('src')).toBeDefined();
+    expect(page.getBackgroundImageElement().getAttribute('src')).toBe(page.getBrowserUrl() + 'assets/img/img/img-001-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /****************************************/
+  /********** SRC FOR MAIN IMAGE **********/
+  /****************************************/
+
+  it('should have a src of main image', () => {
+    page.navigateTo();
+    expect(page.getMainImageElement().getAttribute('src')).toBeDefined();
+    expect(page.getMainImageElement().getAttribute('src')).toBe(page.getBrowserUrl() + 'assets/img/img/img-002-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /**************************************/
+  /********** CHECK CSS VALUES **********/
+  /**************************************/
+
+  it('should have css values', () => {
+    page.navigateTo();
+    expect(page.getBanner().getCssValue('position')).toBe('relative');
+    expect(page.getBackgroundImageElement().getCssValue('position')).toBe('absolute');
   });
 
 });

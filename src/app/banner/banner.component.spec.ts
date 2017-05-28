@@ -194,4 +194,100 @@ describe('BannerComponent (templateUrl)', () => {
     expect(el.textContent).toContain('Test link');
   });
 
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*****************************************/
+  /********** NO BACKGROUND IMAGE **********/
+  /*****************************************/
+
+  it('should display no background image in the DOM if there is no url for', () => {
+    de = fixture.debugElement.query(By.css('.bg-image'));
+    expect(de).toBeNull();
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*************************************/
+  /********** BACKGROUD IMAGE **********/
+  /*************************************/
+
+  it('should display background image in the DOM if there is url for', () => {
+    component.backgroundImageUrl = '/assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.bg-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*********************************************/
+  /********** CHANGE BACKGROUND IMAGE **********/
+  /*********************************************/
+
+  it('should display a diffrent background image in the DOM if there is url for and it is changed', () => {
+    component.backgroundImageUrl = '/assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.bg-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
+    component.backgroundImageUrl = '/assets/img/img/img-002-min.jpg';
+    fixture.detectChanges();
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('/assets/img/img/img-002-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /***********************************/
+  /********** NO MAIN IMAGE **********/
+  /***********************************/
+
+  it('should display no main image in the DOM if there is no url for', () => {
+    de = fixture.debugElement.query(By.css('.main-image'));
+    expect(de).toBeNull();
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /********************************/
+  /********** MAIN IMAGE **********/
+  /********************************/
+
+  it('should display main image in the DOM if there is url for', () => {
+    component.mainImageUrl = '/assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.main-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /***************************************/
+  /********** CHANGE MAIN IMAGE **********/
+  /***************************************/
+
+  it('should display a diffrent main image in the DOM if there is url for and it is changed', () => {
+    component.mainImageUrl = '/assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.main-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('/assets/img/img/img-001-min.jpg');
+    component.mainImageUrl = '/assets/img/img/img-002-min.jpg';
+    fixture.detectChanges();
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('/assets/img/img/img-002-min.jpg');
+  });
+
 });
