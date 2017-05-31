@@ -43,4 +43,31 @@
         height: auto;
     }
 
+    @for $i from 1 through 6 {
+    
+        h#{$i}, .h#{$i} {
+            color: $myWhite;
+        }
+    
+    }
+
+    @include my-links-setter($myWhite, $myWhite, $txtLinkDecoration, $txtLinkDecorationH, $linkOpacity, $linkOpacityH, $transition: true);
+
+    a.btn {
+
+        &,
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+            border-color: $myWhite !important;
+            color: $myWhite !important;
+        }
+    }
+
+    p {
+        color: $myWhite;
+    }
+
 }
