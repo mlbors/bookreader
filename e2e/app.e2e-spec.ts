@@ -123,6 +123,24 @@ describe('bookreader App', () => {
     page.navigateTo();
     expect(page.getBanner().getCssValue('position')).toBe('relative');
     expect(page.getBackgroundImageElement().getCssValue('position')).toBe('absolute');
+    expect(page.getBannerTitleElement().getCssValue('color')).toBe('rgba(255, 255, 255, 1)');
+    expect(page.getBannerTextElement().getCssValue('color')).toBe('rgba(255, 255, 255, 1)');
+    expect(page.getBannerLinkElement().getCssValue('color')).toBe('rgba(255, 255, 255, 1)');
+    expect(page.getBannerLinkElement().getCssValue('border-color')).toBe('rgb(255, 255, 255)');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /***************************************/
+  /********** CHECK BUTTON LINK **********/
+  /***************************************/
+
+  it('should have # for href button', () => {
+    page.navigateTo();
+    expect(page.getBannerLinkElement().getAttribute('href')).toEqual(page.getBrowserUrl() + '#');
+    page.getBannerLinkElement().click();
+    expect(page.getCurrentUrl()).toEqual(page.getBrowserUrl() + '#');
   });
 
 });
