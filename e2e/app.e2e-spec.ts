@@ -123,10 +123,6 @@ describe('bookreader App', () => {
     page.navigateTo();
     expect(page.getBanner().getCssValue('position')).toBe('relative');
     expect(page.getBackgroundImageElement().getCssValue('position')).toBe('absolute');
-    expect(page.getBannerTitleElement().getCssValue('color')).toBe('rgba(255, 255, 255, 1)');
-    expect(page.getBannerTextElement().getCssValue('color')).toBe('rgba(255, 255, 255, 1)');
-    expect(page.getBannerLinkElement().getCssValue('color')).toBe('rgba(255, 255, 255, 1)');
-    expect(page.getBannerLinkElement().getCssValue('border-color')).toBe('rgb(255, 255, 255)');
   });
 
   /********************************************************************************/
