@@ -1,7 +1,7 @@
 /**
- * mlbors - SCSS - Variables - Borders
+ * Book Reader - SCSS - Variables - Borders
  *
- * since		04.01.2017
+ * since		03.05.2017
  * version		1.0.0.0
  * author		mlbors
  * copyright	-
@@ -45,10 +45,10 @@ $footerBorder:                      none;
 /********** FORMS **********/
 /***************************/
 
-$inputFormBorder:                   1px solid $myBrandPrimaryColor;
-$inputFormBorderF:                  1px solid $myBrandPrimaryColorLight;
-$formSubmitBorder:                  1px solid $myBrandPrimaryColor;
-$formSubmitBorderH:                 1px solid $myBrandPrimaryColor;
+$inputFormBorder:                   2px solid $myBrandPrimaryColor;
+$inputFormBorderF:                  2px solid $myBrandPrimaryColorLight;
+$formSubmitBorder:                  2px solid $myBrandPrimaryColor;
+$formSubmitBorderH:                 2px solid $myBrandPrimaryColor;
 $formInputBorderRadius:             0;
 $formSubmiBorderRadius:             0;
 
@@ -59,9 +59,9 @@ $formSubmiBorderRadius:             0;
 /********** BUTTONS **********/
 /*****************************/
 
-$btnBorder:                         1px solid $myBrandPrimaryColor;
-$btnBorderH:                        1px solid $myBrandPrimaryColor;
-$btnBorderRadius:                   120px;
+$btnBorder:                         2px solid $myBrandPrimaryColor;
+$btnBorderH:                        2px solid $myBrandPrimaryColor;
+$btnBorderRadius:                   0;
 
 /********************************************************************************/
 /********************************************************************************/
@@ -70,4 +70,4 @@ $btnBorderRadius:                   120px;
 /********** ELEMENTS **********/
 /******************************/
 
-$borderedElement:                   1px solid $myBrandGrayLight;
+$borderedElement:                   2px solid $myBrandGrayLight;

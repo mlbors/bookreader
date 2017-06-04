@@ -1,5 +1,20 @@
-<h1>{{title}}</h1>
+<img *ngIf="backgroundImageUrl" class="bg-image" src="{{backgroundImageUrl}}" />
 
-<p>
-  banner works!
-</p>
+<div class="banner-content">
+
+    <div class="row">
+
+        <div class="col-sm-6">
+            <h1>{{title}}</h1>
+            <p class="description">{{bannerDescription}}</p>
+            <a href="#" class="btn">{{buttonTitle}}</a>
+        </div>
+        <div class="col-sm-6">
+            <img *ngIf="mainImageUrl" class="main-image" src="{{mainImageUrl}}" />
+        </div>
+
+    <!-- END .row -->
+    </div>
+    
+<!--END .banner-content -->
+</div>
