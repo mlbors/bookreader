@@ -113,14 +113,181 @@ describe('BannerComponent (templateUrl)', () => {
   /********************************************************************************/
   /********************************************************************************/
 
-  /*******************************/
-  /********** DISPLAY P **********/
-  /*******************************/
+  /************************************/
+  /********** NO DESCRITPION **********/
+  /************************************/
 
-  it('should display information in p', () => {
-    de = fixture.debugElement.query(By.css('p'));
+  it('no description in the DOM until manually call `detectChanges`', () => {
+    de = fixture.debugElement.query(By.css('.description'));
     el = de.nativeElement;
-    expect(el.textContent).toContain('banner works!');
+    expect(el.textContent).toEqual('');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /******************************************/
+  /********** ORIGINAL DESCRIPTION **********/
+  /******************************************/
+
+  it('should display descritpion', () => {
+    de = fixture.debugElement.query(By.css('.description'));
+    el = de.nativeElement;
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Lorem ipsum dolor sit amet.');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*******************************************/
+  /********** DIFFERENT DESCRIPTION **********/
+  /*******************************************/
+
+  it('should display a different description', () => {
+    de = fixture.debugElement.query(By.css('.description'));
+    el = de.nativeElement;
+    component.bannerDescription = 'Test description.';
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Test description.');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*****************************/
+  /********** NO LINK **********/
+  /*****************************/
+
+  it('no link in the DOM until manually call `detectChanges`', () => {
+    de = fixture.debugElement.query(By.css('.btn'));
+    el = de.nativeElement;
+    expect(el.textContent).toEqual('');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /********************************/
+  /********** LINK TITLE **********/
+  /********************************/
+
+  it('should display link', () => {
+    de = fixture.debugElement.query(By.css('.btn'));
+    el = de.nativeElement;
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Read more');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /******************************************/
+  /********** DIFFERENT LINK TITLE **********/
+  /******************************************/
+
+  it('should display a different link title', () => {
+    de = fixture.debugElement.query(By.css('.btn'));
+    el = de.nativeElement;
+    component.buttonTitle = 'Test link';
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Test link');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*****************************************/
+  /********** NO BACKGROUND IMAGE **********/
+  /*****************************************/
+
+  it('should display no background image in the DOM if there is no url for', () => {
+    de = fixture.debugElement.query(By.css('.bg-image'));
+    expect(de).toBeNull();
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*************************************/
+  /********** BACKGROUD IMAGE **********/
+  /*************************************/
+
+  it('should display background image in the DOM if there is url for', () => {
+    component.backgroundImageUrl = 'assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.bg-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*********************************************/
+  /********** CHANGE BACKGROUND IMAGE **********/
+  /*********************************************/
+
+  it('should display a diffrent background image in the DOM if there is url for and it is changed', () => {
+    component.backgroundImageUrl = 'assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.bg-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
+    component.backgroundImageUrl = 'assets/img/img/img-002-min.jpg';
+    fixture.detectChanges();
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-002-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /***********************************/
+  /********** NO MAIN IMAGE **********/
+  /***********************************/
+
+  it('should display no main image in the DOM if there is no url for', () => {
+    de = fixture.debugElement.query(By.css('.main-image'));
+    expect(de).toBeNull();
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /********************************/
+  /********** MAIN IMAGE **********/
+  /********************************/
+
+  it('should display main image in the DOM if there is url for', () => {
+    component.mainImageUrl = 'assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.main-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /***************************************/
+  /********** CHANGE MAIN IMAGE **********/
+  /***************************************/
+
+  it('should display a diffrent main image in the DOM if there is url for and it is changed', () => {
+    component.mainImageUrl = 'assets/img/img/img-001-min.jpg';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.main-image'));
+    el = de.nativeElement;
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-001-min.jpg');
+    component.mainImageUrl = 'assets/img/img/img-002-min.jpg';
+    fixture.detectChanges();
+    expect(de).toBeDefined();
+    expect(el.getAttribute('src')).toBe('assets/img/img/img-002-min.jpg');
   });
 
 });

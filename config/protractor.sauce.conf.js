@@ -74,11 +74,29 @@ exports.config = {
       name: "edge-latest-windows-tests",
       shardTestFiles: true,
       maxInstances: 5
+    },
+    {
+      browserName: 'safari',
+      name: 'safari-ios-tests',
+      platformName: 'iOS',
+      platformVersion: '10.2',
+      deviceName: 'iPhone 7',
+      shardTestFiles: true,
+      maxInstances: 5
+    },
+    {
+      browserName: 'chrome',
+      name: 'chrome-android-tests',
+      platformName: 'Android',
+      platformVersion: '6.0',
+      deviceName: 'Android Emulator',
+      shardTestFiles: true,
+      maxInstances: 5
     }
   ],
   sauceBuild: buildNumber,
   directConnect: false,
-  baseUrl: 'https://github.com/mlbors/bookreader',
+  baseUrl: 'https://mlbors.github.io/bookreader/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
