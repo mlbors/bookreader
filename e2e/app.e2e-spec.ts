@@ -59,7 +59,11 @@ describe('bookreader App', () => {
 
   it('should display banner title', () => {
     page.navigateTo();
-    expect(page.getBannerTitle()).toEqual('BANNER TITLE');
+
+    page.getBannerTitle().then(function(text) {
+      expect(text.toLowerCase()).toContain('banner title');
+    });
+
   });
 
   /********************************************************************************/
@@ -71,7 +75,11 @@ describe('bookreader App', () => {
 
   it('should display banner text', () => {
     page.navigateTo();
-    expect(page.getBannerText()).toEqual('Lorem ipsum dolor sit amet.');
+
+    page.getBannerText().then(function(text) {
+      expect(text.toLowerCase()).toContain('lorem ipsum dolor sit amet.');
+    });
+
   });
 
   /********************************************************************************/
@@ -83,7 +91,11 @@ describe('bookreader App', () => {
 
   it('should display banner link text', () => {
     page.navigateTo();
-    expect(page.getBannerLinkText()).toEqual('READ MORE');
+
+    page.getBannerLinkText().then(function(text) {
+      expect(text.toLowerCase()).toContain('read more');
+    });
+
   });
 
   /********************************************************************************/
@@ -123,6 +135,9 @@ describe('bookreader App', () => {
     page.navigateTo();
     expect(page.getBanner().getCssValue('position')).toBe('relative');
     expect(page.getBackgroundImageElement().getCssValue('position')).toBe('absolute');
+    expect(page.getBannerTitleElement().getCssValue('text-transform')).toBe('uppercase');
+    expect(page.getBannerTextElement().getCssValue('text-transform')).toBe('none');
+    expect(page.getBannerLinkElement().getCssValue('text-transform')).toBe('uppercase');
   });
 
   /********************************************************************************/
