@@ -1,7 +1,7 @@
 /**
- * Book Reader - Component - App Component
+ * Book Reader - Component - Introduction Component
  *
- * @since		  03.05.2017
+ * @since		  06.07.2017
  * @version   1.0.0.0
  * @author		mlbors
  * @copyright	-
@@ -11,7 +11,7 @@
 /********** IMPORTS **********/
 /*****************************/
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 /********************************************************************************/
 /********************************************************************************/
@@ -21,9 +21,9 @@ import { Component } from '@angular/core';
 /**************************/
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-introduction',
+  templateUrl: './introduction.component.html',
+  styleUrls: ['./introduction.component.scss']
 })
 
 /********************************************************************************/
@@ -33,6 +33,11 @@ import { Component } from '@angular/core';
 /********** CLASS **********/
 /***************************/
 
-export class AppComponent {
+export class IntroductionComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

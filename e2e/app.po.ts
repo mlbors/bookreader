@@ -207,4 +207,15 @@ export class BookreaderPage {
     return element(by.css('app-root app-banner img.main-image'));
   }
 
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*****************************************************/
+  /********** IS INTRODUCTION ELEMENT PRESENT **********/
+  /*****************************************************/
+
+  isIntroductionElementPresent() {
+    return element(by.css('app-root app-introduction')).isPresent();
+  }
+
 }

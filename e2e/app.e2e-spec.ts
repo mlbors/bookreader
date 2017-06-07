@@ -154,4 +154,17 @@ describe('bookreader App', () => {
     expect(page.getCurrentUrl()).toEqual(page.getBrowserUrl() + '#');
   });
 
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*******************************************/
+  /********** INTRODUCTION ELEMENTS **********/
+  /*******************************************/
+
+  it('should display introduction elements', () => {
+    page.navigateTo();
+    expect(page.isIntroductionElementPresent()).toBe(true);
+  });
+
 });
