@@ -68,4 +68,31 @@ describe('IntroductionComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /******************************/
+  /********** NO TITLE **********/
+  /******************************/
+
+  it('no title in the DOM until manually call `detectChanges`', () => {
+    de = fixture.debugElement.query(By.css('h2'));
+    el = de.nativeElement;
+    expect(el.textContent).toEqual('');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /************************************/
+  /********** ORIGINAL TITLE **********/
+  /************************************/
+
+  it('should display original title', () => {
+    de = fixture.debugElement.query(By.css('h2'));
+    el = de.nativeElement;
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Title');
+  });
+
 });
