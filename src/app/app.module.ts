@@ -19,6 +19,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { FooterComponent } from './footer/footer.component';
 
 /********************************************************************************/
 /********************************************************************************/
@@ -31,7 +32,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
   declarations: [
     AppComponent,
     BannerComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
