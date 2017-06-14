@@ -95,4 +95,31 @@ describe('IntroductionComponent', () => {
     expect(el.textContent).toContain('Title');
   });
 
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /********************************/
+  /********** NO CONTENT **********/
+  /********************************/
+
+  it('no content in the DOM until manually call `detectChanges`', () => {
+    de = fixture.debugElement.query(By.css('p.content'));
+    el = de.nativeElement;
+    expect(el.textContent).toEqual('');
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*************************************/
+  /********** INITIAL CONTENT **********/
+  /*************************************/
+
+  it('should display initial content', () => {
+    de = fixture.debugElement.query(By.css('p.content'));
+    el = de.nativeElement;
+    fixture.detectChanges();
+    expect(el.textContent).toContain('Content');
+  });
+
 });

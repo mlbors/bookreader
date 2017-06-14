@@ -167,4 +167,36 @@ describe('bookreader App', () => {
     expect(page.isIntroductionElementPresent()).toBe(true);
   });
 
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /***********************************************/
+  /********** DISPLAY INTROCUTION TITLE **********/
+  /***********************************************/
+
+  it('should display introduction title', () => {
+    page.navigateTo();
+
+    page.getIntroductionTitle().then(function(text) {
+      expect(text.toLowerCase()).toContain('title');
+    });
+
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /*************************************************/
+  /********** DISPLAY INTROCUTION CONTENT **********/
+  /*************************************************/
+
+  it('should display introduction content', () => {
+    page.navigateTo();
+
+    page.getIntroductionContent().then(function(text) {
+      expect(text.toLowerCase()).toContain('content');
+    });
+
+  });
+
 });
