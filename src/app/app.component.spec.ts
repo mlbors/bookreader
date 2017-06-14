@@ -16,6 +16,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { FooterComponent } from './footer/footer.component';
 
 /********************************************************************************/
 /********************************************************************************/
@@ -38,7 +39,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         BannerComponent,
-        IntroductionComponent
+        IntroductionComponent,
+        FooterComponent
       ],
     }).compileComponents();
   }));

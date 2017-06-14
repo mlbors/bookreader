@@ -154,15 +154,14 @@ describe('bookreader App', () => {
     expect(page.getCurrentUrl()).toEqual(page.getBrowserUrl() + '#');
   });
 
-
   /********************************************************************************/
   /********************************************************************************/
 
-  /*******************************************/
-  /********** INTRODUCTION ELEMENTS **********/
-  /*******************************************/
+  /******************************************/
+  /********** INTRODUCTION ELEMENT **********/
+  /******************************************/
 
-  it('should display introduction elements', () => {
+  it('should display introduction element', () => {
     page.navigateTo();
     expect(page.isIntroductionElementPresent()).toBe(true);
   });
@@ -195,6 +194,34 @@ describe('bookreader App', () => {
 
     page.getIntroductionContent().then(function(text) {
       expect(text.toLowerCase()).toContain('content');
+    });
+
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /************************************/
+  /********** FOOTER ELEMENT **********/
+  /************************************/
+
+  it('should display footer element', () => {
+    page.navigateTo();
+    expect(page.isFooterElementPresent()).toBe(true);
+  });
+
+  /********************************************************************************/
+  /********************************************************************************/
+
+  /********************************************/
+  /********** DISPLAY FOOTER CONTENT **********/
+  /********************************************/
+
+  it('should display footer content', () => {
+    page.navigateTo();
+
+    page.getFooterContent().then(function(text) {
+      expect(text.toLowerCase()).toContain('footer content');
     });
 
   });
