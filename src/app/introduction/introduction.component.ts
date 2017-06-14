@@ -1,7 +1,7 @@
 /**
- * Book Reader - Component - Banner Component
+ * Book Reader - Component - Introduction Component
  *
- * @since		  03.05.2017
+ * @since		  06.07.2017
  * @version   1.0.0.0
  * @author		mlbors
  * @copyright	-
@@ -21,9 +21,9 @@ import { Component, OnInit, Input } from '@angular/core';
 /**************************/
 
 @Component({
-  selector: 'app-banner',
-  templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.scss']
+  selector: 'app-introduction',
+  templateUrl: './introduction.component.html',
+  styleUrls: ['./introduction.component.scss']
 })
 
 /********************************************************************************/
@@ -33,18 +33,14 @@ import { Component, OnInit, Input } from '@angular/core';
 /********** CLASS **********/
 /***************************/
 
-export class BannerComponent implements OnInit {
+export class IntroductionComponent implements OnInit {
 
   /********************************/
   /********** PROPERTIES **********/
   /********************************/
 
-  buttonTitle: String = 'Read more';
-
-  @Input() title: String = 'Banner title';
-  @Input() bannerDescription: String = 'Lorem ipsum dolor sit amet.';
-  @Input() backgroundImageUrl: String = null;
-  @Input() mainImageUrl: String = null;
+  @Input() title: String = 'Title';
+  @Input() content: String = 'Content';
 
   /********************************************************************************/
   /********************************************************************************/
