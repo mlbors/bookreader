@@ -39,10 +39,10 @@ export class BannerComponent implements OnInit {
   /********** PROPERTIES **********/
   /********************************/
 
-  title: String = 'Banner title';
-  bannerDescription: String = 'Lorem ipsum dolor sit amet.';
   buttonTitle: String = 'Read more';
 
+  @Input() title: String = 'Banner title';
+  @Input() bannerDescription: String = 'Lorem ipsum dolor sit amet.';
   @Input() backgroundImageUrl: String = null;
   @Input() mainImageUrl: String = null;
 
