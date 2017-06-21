@@ -14,6 +14,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ReaderComponent } from './reader.component';
+import { PreviewComponent } from './preview/preview.component';
+import { BookComponent } from './book/book.component';
+
 /********************************************************************************/
 /********************************************************************************/
 
@@ -25,7 +29,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule
   ],
-  declarations: []
+  declarations: [ReaderComponent, PreviewComponent, BookComponent]
 })
 
 /********************************************************************************/
