@@ -16,6 +16,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { ReaderModule } from './reader/reader.module';
+
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { IntroductionComponent } from './introduction/introduction.component';
@@ -38,7 +40,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ReaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
