@@ -1,7 +1,7 @@
 /**
  * Book Reader - Component - Reader Component
  *
- * @since		  21.07.2017
+ * @since		  21.06.2017
  * @version   1.0.0.0
  * @author		mlbors
  * @copyright	-
