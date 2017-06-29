@@ -7,7 +7,7 @@
  * @copyright	-
  */
 
-export interface Parser {
+export interface IParser {
 
   /********************************/
   /********** PROPERTIES **********/
@@ -22,6 +22,6 @@ export interface Parser {
   /********** METHODS **********/
   /*****************************/
 
-  parse();
+  parse(): void;
 
 }
