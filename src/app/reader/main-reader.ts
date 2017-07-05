@@ -12,6 +12,7 @@
 /*****************************/
 
 import { IReader } from './ireader';
+import { MdParser } from './md-parser';
 
 /********************************************************************************/
 /********************************************************************************/
@@ -26,6 +27,10 @@ export class MainReader implements IReader {
   /********** PROPERTIES **********/
   /********************************/
 
+  /**********/
+  /********** PUBLIC **********/
+  /**********/
+
   type: String;
   parser: any;
 
@@ -37,7 +42,7 @@ export class MainReader implements IReader {
   /********************************/
 
   setParser(): void {
-    this.parser = 'foo';
+    this.parser = new MdParser();
   }
 
   /********************************************************************************/
@@ -48,7 +53,7 @@ export class MainReader implements IReader {
   /**************************/
 
   read(): String {
-    return 'foo';
+    return this.parser.parse();
   }
 
 }

@@ -13,6 +13,10 @@ export interface IReader {
   /********** PROPERTIES **********/
   /********************************/
 
+  /**********/
+  /********** PUBLIC **********/
+  /**********/
+
   type: String;
   parser: any;
 
