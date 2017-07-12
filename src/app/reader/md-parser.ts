@@ -11,9 +11,10 @@
 /********** IMPORTS **********/
 /*****************************/
 
-import { Injectable } from '@angular/core';
+import { showdown } from 'showdown';
+
 import { AParser } from './aparser';
-import { BookfeedService } from './bookfeed.service'
+import { BookfeedService } from './bookfeed.service';
 
 /********************************************************************************/
 /********************************************************************************/
@@ -22,12 +23,17 @@ import { BookfeedService } from './bookfeed.service'
 /********** CLASS **********/
 /***************************/
 
-@Injectable()
 export class MdParser extends AParser {
 
   /********************************/
   /********** PROPERTIES **********/
   /********************************/
+
+  /**********/
+  /********** PRIVATE **********/
+  /**********/
+
+  private bookfeedService: BookfeedService; //CHANGE!
 
   /********************************************************************************/
   /********************************************************************************/
@@ -36,7 +42,7 @@ export class MdParser extends AParser {
   /********** CONSTRUCTOR **********/
   /*********************************/
 
-  constructor(private bookfeedService: BookfeedService) {
+  constructor() {
     super();
   }
 
@@ -59,8 +65,7 @@ export class MdParser extends AParser {
   /***********************************/
 
   retrieveData() {
-    const data = this.bookfeedService.getData();
-    this.setData(data);
+    this.bookfeedService.getData().then((data) => this.setData(data));
   }
 
   /********************************************************************************/
